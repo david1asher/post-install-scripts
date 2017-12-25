@@ -11,22 +11,48 @@ sudo apt-get -y --force-yes upgrade
 
 # some apps
 sudo apt-get -y --allow-unauthenticated install \
-    libxss1 git gitk gitg p7zip p7zip-full p7zip-rar \
+    libxss1 \
+    git \
+    gitk \
+    gitg \
+    p7zip \
+    p7zip-full \
+    p7zip-rar \
     software-properties-common \
-    exfat-utils exfat-fuse \
+    exfat-utils \
+    exfat-fuse \
     apt-transport-https \
     ca-certificates \
     curl \
     gdebi \
     google-chrome-stable \
-    vlc \
+    vlc
 
 
-# installing apps that demand additional functions
+# installing apps that require tailored approach:
 
 # node via nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 nvm install stable
+
+# python
+sudo apt-get install -y build-essential \
+checkinstall
+libreadline-gplv2-dev \
+libncursesw5-dev \
+libssl-dev \
+libsqlite3-dev \
+tk-dev libgdbm-dev \
+libc6-dev libbz2-dev
+
+ # choose the version:
+pyversion=2.7.14
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/$pyversion/Python-$pyversion.tgz
+sudo tar xzf Python-$pyversion.tgz
+cd Python-$pyversion
+sudo ./configure
+sudo make altinstall
 
 # visual studio code
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
