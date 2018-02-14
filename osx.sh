@@ -42,7 +42,8 @@ sudo python get-pip.py
 sudo pip install awscli
 
 ## docker
-brew cask install dockertoolbox
+brew install docker
+brew cask install docker-toolbox
 brew cask install kitematic
 
 # Google Chrome
