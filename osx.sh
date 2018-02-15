@@ -38,6 +38,16 @@ brew cask install google-chrome
 ## appstore cli
 brew install mas
 
+## postgresql
+brew install postgresql
+
+## freetds for talking to ms-sql
+# brew install freetds
+brew install freetds@0.91
+
+## caffeine
+brew cask install caffeine
+
 ## lastpass
 mas install 926036361
 brew install lastpass-cli --with-pinentry
