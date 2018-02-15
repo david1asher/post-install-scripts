@@ -44,6 +44,7 @@ brew install postgresql
 ## freetds for talking to ms-sql
 # brew install freetds
 brew install freetds@0.91
+brew link --force freetds@0.91
 
 ## caffeine
 brew cask install caffeine
