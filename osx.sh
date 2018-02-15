@@ -51,8 +51,9 @@ brew cask install caffeine
 
 ## lastpass
 mas install 926036361
-brew install lastpass-cli --with-pinentry
-git config --global credential.helper lastpass
+# next 2 lines are commented out because lastpass-cli still has some issues
+# brew install lastpass-cli --with-pinentry
+# git config --global credential.helper lastpass
 
 ## BetterSnapTool
 mas install 417375580
