@@ -41,6 +41,9 @@ brew install mas
 ## postgresql
 brew install postgresql
 
+## sqlectron
+brew cask install sqlectron
+
 ## freetds for talking to ms-sql
 # brew install freetds
 brew install freetds@0.91
