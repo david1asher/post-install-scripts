@@ -8,6 +8,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ## utils
 brew install wget
+sudo python get-pip.py
 
 ## git
 brew install git
@@ -25,11 +26,11 @@ brew cask install robo-3t
 
 ## aws cli tools
 wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
 sudo pip install awscli
 
 ## docker
 brew cask install docker
+sudo pip install docker-compose
 brew cask install kitematic
 
 # Google Chrome
@@ -46,14 +47,14 @@ brew cask install sqlectron
 
 ## freetds for talking to ms-sql
 # brew install freetds
-brew install freetds@0.91
-brew link --force freetds@0.91
+# brew install freetds@0.91
+# brew link --force freetds@0.91
 
 ## caffeine
-brew cask install caffeine
+# brew cask install caffeine
 
 ## lastpass
-mas install 926036361
+# mas install 926036361
 # next 2 lines are commented out because lastpass-cli still has some issues
 # brew install lastpass-cli --with-pinentry
 # git config --global credential.helper lastpass
@@ -67,3 +68,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string “Nlsv”
 # sets terminal theme to pro
 defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
+
+## TODO
+## install this https://www.crystalidea.com/downloads/macsfancontrol.zip
+##
