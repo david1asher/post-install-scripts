@@ -71,4 +71,4 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
 
 ## TODO
 ## install this https://www.crystalidea.com/downloads/macsfancontrol.zip
-##
+## pbcopy < ~/.ssh/id_rsa.pub
