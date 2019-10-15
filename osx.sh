@@ -8,6 +8,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ## utils
 brew install wget
+
 sudo python get-pip.py
 
 ## git
