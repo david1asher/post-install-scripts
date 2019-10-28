@@ -16,7 +16,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ## utils
 brew install wget
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 
 ## git
@@ -76,19 +75,14 @@ brew install mas
 ## BetterSnapTool
 mas install 417375580
 
+# macsfancontrols
+wget https://www.crystalidea.com/downloads/macsfancontrol.zip
+unzip macsfancontrol.zip
+mv Macs\ Fan\ Control.app /Applications
+
 ## finder list view by default
 defaults write com.apple.finder FXPreferredViewStyle -string “Nlsv”
 
 # sets terminal theme to pro
 defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
-
-# macsfancontrols
-wget https://www.crystalidea.com/downloads/macsfancontrol.zip
-unzip macsfancontrol.zip
-mv Macs\ Fan\ Control.app /Applications
-
-mkdir ~/dev
-
-## TODO
-## pbcopy < ~/.ssh/id_rsa.pub
