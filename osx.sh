@@ -81,8 +81,21 @@ unzip macsfancontrol.zip
 mv Macs\ Fan\ Control.app /Applications
 
 ## finder list view by default
-defaults write com.apple.finder FXPreferredViewStyle -string “Nlsv”
+# defaults write com.apple.finder FXPreferredViewStyle -string “Nlsv”
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
+# quit finder
+defaults write com.apple.finder QuitMenuItem -bool true; killall Finder
+
+# file suffix in finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable the standard delay in rendering a Web page.
+defaults write com.apple.Safari WebKitInitialTimedLayoutDelay 0.25
+# disable time-machine throtelling
+sudo sysctl debug.lowpri_throttle_enabled=0
+# finder full path
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # sets terminal theme to pro
 defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
