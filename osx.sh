@@ -33,6 +33,9 @@ brew cask install robo-3t
 ## sqlectron
 brew cask install sqlectron
 
+# postman 
+brew cask install postman
+
 # sequel-pro
 brew cask install sequel-pro
 
