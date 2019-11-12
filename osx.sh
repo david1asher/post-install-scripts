@@ -1,6 +1,19 @@
 #!/bin/bash
 
+# FIELS
 touch ~/.bash_profile
+touch ~/.gitignore_global
+
+# GIT CONFIG
+echo ".idea" >> ~/.gitignore_global
+echo ".DS_Store" >> ~/.gitignore_global
+echo ".DS_Store?" >> ~/.gitignore_global
+echo "._*" >> ~/.gitignore_global
+echo ".Spotlight-V100" >> ~/.gitignore_global
+echo ".Trashes" >> ~/.gitignore_global
+echo "ehthumbs.db" >> ~/.gitignore_global
+echo "Thumbs.db" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # ssh keys
 echo Enter your email:
@@ -62,9 +75,9 @@ nvm install stable
 nvm alias default stable
 
 ## postgresql
-brew install postgresql
+# brew install postgresql
 
-## docker
+#### DOCKER
 brew cask install docker
 sudo pip install docker-compose
 brew cask install kitematic
@@ -83,22 +96,23 @@ wget https://www.crystalidea.com/downloads/macsfancontrol.zip
 unzip macsfancontrol.zip
 mv Macs\ Fan\ Control.app /Applications
 
-## finder list view by default
+#### FINDER
+# finder list view by default
 # defaults write com.apple.finder FXPreferredViewStyle -string “Nlsv”
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
-
 # quit finder
 defaults write com.apple.finder QuitMenuItem -bool true; killall Finder
-
 # file suffix in finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# full path in finder title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Disable the standard delay in rendering a Web page.
 defaults write com.apple.Safari WebKitInitialTimedLayoutDelay 0.25
 # disable time-machine throtelling
 sudo sysctl debug.lowpri_throttle_enabled=0
-# finder full path
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+#### TERMINAL
 # sets terminal theme to pro
 defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
