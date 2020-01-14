@@ -31,6 +31,9 @@ brew install wget
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python get-pip.py
 
+##iterm
+brew cask install iterm
+
 ## git
 brew install git
 
