@@ -13,6 +13,7 @@ echo ".Spotlight-V100" >> ~/.gitignore_global
 echo ".Trashes" >> ~/.gitignore_global
 echo "ehthumbs.db" >> ~/.gitignore_global
 echo "Thumbs.db" >> ~/.gitignore_global
+echo "yosi" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
 # ssh keys
