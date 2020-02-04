@@ -14,7 +14,9 @@ echo ".Trashes" >> ~/.gitignore_global
 echo "ehthumbs.db" >> ~/.gitignore_global
 echo "Thumbs.db" >> ~/.gitignore_global
 echo "yosi" >> ~/.gitignore_global
+echo ".metals" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+
 
 # ssh keys
 echo Enter your email:
