@@ -122,3 +122,6 @@ sudo sysctl debug.lowpri_throttle_enabled=0
 # sets terminal theme to pro
 defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
+
+
+npm install npm-ls-scripts -g
